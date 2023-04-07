@@ -26,7 +26,7 @@ def download_video():
 
     # Download subtitles if requested
     if download_sub:
-        sub_url = youtube.captions['a.en'].xml_captions_url
+        sub_url = youtube.captions['a.en'].url
         sub_data = requests.get(sub_url).content
         sub_path = os.path.join(os.getcwd(), video.default_filename[:-3]+'srt')
         with open(sub_path, 'wb') as f:
