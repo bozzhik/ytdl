@@ -3,9 +3,9 @@ import {useCallback, useState} from 'react'
 export default function App() {
   const [buttonColor, setButtonColor] = useState('')
 
-  const handleClick = useCallback(() => {
-    console.log('Button clicked!')
-    setButtonColor('#1095c1')
+  const handleClick = useCallback((event) => {
+    event.preventDefault() // Prevent form submission
+    setButtonColor('transparent')
     setTimeout(() => {
       setButtonColor('')
     }, 1500)
