@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <div className="h-screen grid place-items-center">
-      <div className="w-1/3 mx-auto">
+      <div className="sm:w-full sm:px-10 w-1/3 mx-auto">
         <h2 className="text-3xl mb-4">YouTube Downloader</h2>
         <form>
           <label htmlFor="url">Enter YouTube video URL:</label>
