@@ -7,9 +7,10 @@ app = Flask(__name__)
 
 @app.route('/download', methods=['POST'])
 def download_video():
-    video_url = request.form['url']
-    format_type = request.form['format']
-    download_sub = request.form['subtitles'] == 'True'
+    data = request.get_json()
+    video_url = data['url']
+    format_type = data['format']
+    download_sub = data['subtitles'] == 'True'
     youtube = YouTube(video_url)
 
     # Select the format based on the user's choice
