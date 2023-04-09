@@ -41,3 +41,11 @@ def download_video():
                          mimetype='application/octet-stream', add_etags=False)
     else:
         return send_file(file_path, as_attachment=True)
+
+# Usage example
+
+# {
+#     "url": "https://www.youtube.com/watch?v=JkORjCt2VhQ",
+#     "format": "mp4",
+#     "subtitles": "False"
+# }
