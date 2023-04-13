@@ -12,7 +12,7 @@ Install the required packages by running pip install -r requirements.txt
    POST request to /download with the following JSON data:
    
 
-     {
+    {
         "url": "https://www.youtube.com/watch?v=JkORjCt2VhQ",
         "format": "high",
         "subtitles": "False"
