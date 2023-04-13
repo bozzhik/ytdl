@@ -38,11 +38,11 @@ If the video does not have subtitles and subtitles is set to True, the API will 
 
 Send a POST request to /download_playlist with the following JSON data:
 
-{
-    "url": "https://www.youtube.com/playlist?list=PLwVUbPpIRn1QxqZz0x9Zt-dNHQVJzJGZ_",
-    "format": "high",
-    "subtitles": "False"
-}
+    {
+        "url": "https://www.youtube.com/playlist?list=PLwVUbPpIRn1QxqZz0x9Zt-dNHQVJzJGZ_",
+        "format": "high",
+        "subtitles": "False"
+    }
 
  - url: The URL of the Youtube playlist you want to download. 
  - format : The format of the videos in the playlist you want to download. Valid
@@ -85,7 +85,7 @@ The video file is downloaded as an attachment.
 
 The video file and subtitle file are downloaded as attachments.
 
-Download a video in the medium resolution and with subtitles, but the video does not have subtitles
+**Download a video in the medium resolution and with subtitles, but the video does not have subtitles**
 
 **Request:**
 
