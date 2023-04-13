@@ -38,11 +38,11 @@ If the video does not have subtitles and subtitles is set to True, the API will 
 
 Send a POST request to /download_playlist with the following JSON data:
 
-    {
-        "url": "https://www.youtube.com/playlist?list=PLwVUbPpIRn1QxqZz0x9Zt-dNHQVJzJGZ_",
-        "format": "high",
-        "subtitles": "False"
-    }
+{
+    "url": "https://www.youtube.com/playlist?list=PLwVUbPpIRn1QxqZz0x9Zt-dNHQVJzJGZ_",
+    "format": "high",
+    "subtitles": "False"
+}
 
  - url: The URL of the Youtube playlist you want to download. 
  - format : The format of the videos in the playlist you want to download. Valid
@@ -85,7 +85,7 @@ The video file is downloaded as an attachment.
 
 The video file and subtitle file are downloaded as attachments.
 
-**Download a video in the medium resolution and with subtitles, but the video does not have subtitles**
+Download a video in the medium resolution and with subtitles, but the video does not have subtitles
 
 **Request:**
 
@@ -127,8 +127,41 @@ Request:**
     {
         "message": "One or more videos in this playlist do not have subtitles."
     }
+    
+**Download a video with translated subtitles**
+
+**Request:**
+
+    {
+        "url": "https://www.youtube.com/watch?v=JkORjCt2VhQ",
+        "format": "high",
+        "subtitles": "True",
+        "language": "es"
+    }
+
+**Response:**
+
+The video file and translated subtitle file are downloaded as attachments.
+
+**Request:**
+
+    {
+        "url": "https://www.youtube.com/playlist?list=PLwVUbPpIRn1QxqZz0x9Zt-dNHQVJzJGZ_",
+        "format": "high",
+        "subtitles": "True",
+        "language": "es"
+    }
+
+**Response:**
+
+The zip file of the playlist directory, including translated subtitle files for each video, is downloaded as an attachment.
+
+Note: In order to download translated subtitles, you need to specify the language code in the request data. For example, "es" for Spanish, "fr" for French, "de" for German, etc. If the video or playlist does not have subtitles in the specified language, the API will return a JSON response with the following message:
+
+    {
+        "message": "This video/playlist does not have subtitles in the specified language."
+    }
+
 
 License
 This project is licensed under the MIT
-
-
