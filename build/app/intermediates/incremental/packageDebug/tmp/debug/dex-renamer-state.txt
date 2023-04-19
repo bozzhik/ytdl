@@ -1,0 +1,4 @@
+#Mon Apr 17 22:49:19 MSK 2023
+base.0=/Users/alejandro/Desktop/Life/Apps/front_ytdl/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
