@@ -1,0 +1,18 @@
+2023/07/31-00:28:23.451 a903 Reusing MANIFEST /private/var/folders/1p/27jszvps12x14r9hnwf07w240000gn/T/flutter_tools.mIaQSu/flutter_tools_chrome_device.fh0Fpi/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/07/31-00:28:23.452 a903 Recovering log #20
+2023/07/31-00:28:23.457 a903 Reusing old log /private/var/folders/1p/27jszvps12x14r9hnwf07w240000gn/T/flutter_tools.mIaQSu/flutter_tools_chrome_device.fh0Fpi/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000020.log 
+2023/07/31-00:28:23.458 a903 Delete type=0 #12
+2023/07/31-00:28:23.458 a903 Delete type=0 #16
+2023/07/31-00:28:23.458 a903 Delete type=2 #14
+2023/07/31-00:28:23.458 a903 Delete type=2 #13
+2023/07/31-00:28:23.458 a903 Delete type=2 #11
+2023/07/31-00:28:23.458 a903 Delete type=2 #18
+2023/07/31-00:43:32.728 a603 Level-0 table #25: started
+2023/07/31-00:43:32.743 a603 Level-0 table #25: 1288663 bytes OK
+2023/07/31-00:43:32.749 a603 Delete type=0 #20
+2023/07/31-00:43:35.148 a903 Compacting 1@1 + 1@2 files
+2023/07/31-00:43:35.154 a903 Generated table #26@1: 522 keys, 41975 bytes
+2023/07/31-00:43:35.154 a903 Compacted 1@1 + 1@2 files => 41975 bytes
+2023/07/31-00:43:35.161 a903 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/07/31-00:43:35.161 a903 Delete type=2 #22
+2023/07/31-00:43:35.161 a903 Delete type=2 #25
